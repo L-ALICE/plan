@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <link rel="stylesheet" href="css/index.css">
+		<script src="js/require.js" data-main="js/main"></script>
+		
+	</head>
+	<body>
+		<header>
+			<div class="header-wrap">
+			<h1><img src="img/logo2.png" alt=""></h1>
+			<!--<div class = 'txt1'>-->
+			<input type="text" id = "txt1" value="请输入菜谱/食材/作者/菜单" onfocus="javascript:this.value=''" onblur="javascript:this.value='请输入菜谱/食材/作者/菜单'">
+			<input type="button" id = "btn1" value = "搜索">
+		
+			<ul>
+				<li><a href="">QQ登录</a></li>
+				<li><a href="">微博登录</a></li>
+				<li><a href="">注册</a></li>
+				<li><a href="">登录</a></li>
+			</ul>
+			</div>
+		</header>
+		<!-- <div class="menu-container">
+			<div class="menu">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="http://sc.chinaz.com">菜谱大全</a>
+						<ul>
+							<li><a href="#">家常菜</a>
+								<ul>
+									<li><a href="#">凉菜</a></li>
+									<li><a href="#">素食</a></li>
+									<li><a href="#">海鲜</a></li>
+									<li><a href="#">湘菜</a></li>
+								</ul>
+							</li>
+							<li><a href="#">中华菜系</a>
+								<ul>
+									<li><a href="#">粤菜</a></li>
+									<li><a href="#">川菜</a></li>
+									<li><a href="#">洛阳水席</a></li>
+									<li><a href="#">信阳菜</a></li>
+								</ul>
+							</li>
+							<li><a href="#">外国菜谱</a>
+								<ul>
+									<li><a href="#">法国菜</a></li>
+									<li><a href="#">韩国料理</a></li>
+									<li><a href="#">意大利餐</a></li>
+								</ul>
+							</li>
+							<li><a href="#">烘培</a>
+								<ul>
+									<li><a href="#">甜品点心</a></li>
+									<li><a href="#">饼干配方</a></li>
+									<li><a href="#">蛋糕</a></li>
+									<li><a href="#">面包</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">饮食健康</a>
+						<ul>
+							<li><a href="#">Today</a></li>
+							<li><a href="#">Calendar</a></li>
+							<li><a href="#">Sport</a></li>
+						</ul>
+					</li>
+					<li><a href="http://sc.chinaz.com">美食菜单</a>
+						<ul>
+							<li><a href="#">School</a>
+								<ul>
+									<li><a href="#">Lidership</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Locations</a></li>
+									<li><a href="#">Careers</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Study</a>
+								<ul>
+									<li><a href="#">Undergraduate</a></li>
+									<li><a href="#">Masters</a></li>
+									<li><a href="#">International</a></li>
+									<li><a href="#">Online</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Study</a>
+								<ul>
+									<li><a href="#">Undergraduate</a></li>
+									<li><a href="#">Masters</a></li>
+									<li><a href="#">International</a></li>
+									<li><a href="#">Online</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Empty sub</a></li>
+						</ul>
+					</li>
+					<li><a href="">家居馆</a></li>
+					<li><a href="">美食达人</a></li>
+					<li><a href="">菜谱食谱</a></li>
+					<li><a href="">手机app下载</a></li>
+				</ul>
+			</div>
+		</div> -->
+		<div id="nav">
+			<div class="nav-wrap">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li>
+					<a href="">菜谱大全</a>
+					<!-- <div class="second">
+						<h2>家常菜谱</h2>
+						  <p>
+							<a href="">家常菜</a>
+							<a href="">凉菜</a>
+							<a href="">素食</a>
+						    <a href="">荤菜</a>
+							<a href="">海鲜</a>
+							<a href="">湘菜</a>
+							<a href="">川菜</a>
+							<a href="">粤菜</a>
+						    <a href="">早餐</a>
+							<a href="">中餐</a>
+							<a href="">晚餐</a>
+							<a href="">洛阳水席</a>
+							<a href="">孕婴辅食</a>
+							<a href="">减脂餐</a>
+							</p>
+						
+						<div class="sec1">
+						<h3>中华菜系</h3>
+						<ul>
+							<li><a href="">川菜</a></li>
+							<li><a href="">粤菜</a></li>
+							<li><a href="">东北菜</a></li>
+							<li><a href="">湘菜</a></li>
+							<li><a href="">信阳菜</a></li>
+							<li><a href="">洛阳水席</a></li>
+							<li><a href="">浙江菜</a></li>
+							<li><a href="">清真菜</a></li>
+						</ul>
+						</div>
+						<div class="sec2">
+						<h4>各地小吃</h4>
+						<ul>
+							<li><a href="">北京小吃</a></li>
+							<li><a href="">西安小吃</a></li>
+							<li><a href="">回民小吃</a></li>
+							<li><a href="">洛阳小吃</a></li>
+						</ul>
+						</div>
+						<div class="sec1">
+						<h3>外国菜谱</h3>
+						<ul>
+							<li><a href="">韩国料理</a></li>
+							<li><a href="">日本料理</a></li>
+							<li><a href="">法国菜</a></li>
+							<li><a href="">意大利餐</a></li>
+						</ul>
+						</div>
+						<div class="sec2">
+						<h4>烘培</h4>
+						<ul>
+							<li><a href="">蛋糕面包</a></li>
+							<li><a href="">甜品点心</a></li>
+							<li><a href="">饼干配方</a></li>
+						</ul>
+						</div>
+						<div class="sec1">
+						<h3>厨房百科</h3>
+						<ul>
+							<li><a href="">摆盘周边</a></li>
+							<li><a href="">烹饪技巧</a></li>
+							<li><a href="">生活妙招</a></li>
+							<li><a href="">美食专题</a></li>
+						</ul>
+						</div>
+						<div class="sec2">
+						<h4>食材百科</h4>
+						<li><a href="">蔬菜</a></li>
+						<li><a href="">水果</a></li>
+						<li><a href="">谷类</a></li>
+					</div>
+					</div> -->
+					</li>
+				<li><a href="">饮食健康</a></li>
+				<li><a href="">美食菜单</a></li>
+				<li><a href="">家居馆</a></li>
+				<li><a href="">美食达人</a></li>
+				<li><a href="">菜谱视频</a></li>
+				<li><a href="">手机版下载</a></li>
+			</ul>
+			</div>
+		</div>
+		<div id="tuijian">
+			<h2>今日晚餐推荐：简单的家常小炒和一碗汤便是温暖的晚餐</h2>
+		</div>
+		<div id="fruit">
+			<div class="fruit-wrap">
+			<h2>十月，清热利湿，及时补水</h2>
+			<h3>更多食材</h3>
+			<div id = "slide1" class="box1">
+				<ul>
+					<li><a href="##"><img src="img/g1.jpg" alt="薏米"></a></li>
+					<li><a href="##"><img src="img/g2.jpg" alt="红豆"></a></li>
+					<li><a href="##"><img src="img/g3.jpg" alt="板栗"></a></li>
+					<li><a href="##"><img src="img/g4.jpg" alt="燕麦"></a></li>
+					<li><a href="##"><img src="img/g5.jpg" alt="毛豆"></a></li>
+					<li><a href="##"><img src="img/g6.jpg" alt="玉米"></a></li>
+					<li><a href="##"><img src="img/g7.jpg" alt="鸭子"></a></li>
+					<li><a href="##"><img src="img/g8.jpg" alt="鲍鱼"></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div id="caipu">
+			<div class="cai-wrap">
+				<h2>今日最受欢迎食谱</h2>
+				<ul>
+					<li><a href="">最新</a></li>
+					<li>最热:</li>
+					<li><a href="">一小时</a></li>
+					<li><a href="">今日</a></li>
+					<li><a href="">七天</a></li>
+					<li><a href="">更多菜谱</a></li>
+				</ul>
+				<div class="brap">
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+					<div class="cai">
+						<dl>
+							<dt><img src="img/1.jpg" alt=""></dt>
+							<dd>香酥反沙土豆条</dd>
+							<p>143&nbsp;评论&nbsp;40430&nbsp;人气</p>
+							<b>寓言7576</b>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="news">
+			<div class="news-wrap">
+			<h2>健康新闻</h2>
+			<h3>更多健康资讯</h3>
+			<div class="bb">
+			<div class="box2">
+				<img src="img/1.jpg" alt="">
+				<p>这个菜好吃吗</p>
+				<p>真的不错哦</p>
+				<p>欢迎各位前来品鉴~</p>
+			</div>
+			
+			<div class="box2">
+				<img src="img/1.jpg" alt="">
+				<p>这个菜好吃吗</p>
+				<p>真的不错哦</p>
+				<p>欢迎各位前来品鉴~</p>
+			</div>
+			<div class="box2">
+				<img src="img/1.jpg" alt="">
+				<p>这个菜好吃吗</p>
+				<p>真的不错哦</p>
+				<p>欢迎各位前来品鉴~</p>
+			</div>
+			<div class="box2">
+				<img src="img/1.jpg" alt="">
+				<p>这个菜好吃吗</p>
+				<p>真的不错哦</p>
+				<p>欢迎各位前来品鉴~</p>
+			</div>
+			</div>
+		</div>
+		</div>
+		<div id="bottom">
+			<div class="bo-wrap">
+				<div class="box3">
+				<h2><img src="img/logo2.png" alt=""></h2>
+				<h3>做菜只用美食杰</h3>
+				<span>www.Meishi.cc</span>
+				</div>
+				<div class="box4">
+				<p>中国，最大的菜谱库<b>800000篇</b></p>
+				<p>每月，用户访问数量<b>20000000次</b></p>
+				<p>每年，菜谱被浏览量<b>36000000000次</b></p>
+				<p>现在，这些数字还在不断的增长着，欢迎您来一起使用美食杰</p>
+				</div>
+				<div class="right">
+					<div class="b1">
+						<img src="" alt="">
+						<b>点击进入</b>
+						<p>美食杰官方微博</p>
+					</div>
+					<div class="b1">
+						<img src="" alt="">
+						<b>点击进入</b>
+						<p>美食杰QQ空间</p>
+					</div>
+					<div class="b1">
+						<img src="" alt="">
+						<b>扫描二维码添加</b>
+						<p>美食杰为微信好友</p>
+					</div>
+					<div class="b1">
+						<img src="" alt="">
+						<b>扫描二维码下载</b>
+						<p>美食杰手机客户端</p>
+					</div>
+				</div>
+				<h4>友情链接</h4>
+				<div class="lianjie">
+					<ul>
+						<li><a href="">美食</a></li>
+						<li><a href="">体质测试</a></li>
+						<li><a href="">伊特</a></li>
+						<li><a href="">大粤网美食</a></li>
+						<li><a href="">9酷音乐网</a></li>
+						<li><a href="">爱奇艺生活</a></li>
+						<li><a href="">365音乐网</a></li>
+						<li><a href="">图吧</a></li>
+						<li><a href="">汽车论坛</a></li>
+						<li><a href="">39健康饮食</a></li>
+					</ul>
+					<ul>
+						<li><a href="">QQ下载</a></li>
+						<li><a href="">家具网</a></li>
+						<li><a href="">搜狐美食</a></li>
+						<li><a href="">美食天下</a></li>
+						<li><a href="">中华美食网</a></li>
+						<li><a href="">合肥公交网</a></li>
+						<li><a href="">苹果园</a></li>
+						<li><a href="">红餐微杂志</a></li>
+						<li><a href="">北京搜房网</a></li>
+						<li><a href="">更多友情链接</a></li>
+					</ul>
+					</div>
+				<h5>
+				<a href="">公司简介</a>
+				<a href="">企业文化</a>
+				<a href="">公司动态</a>
+				<a href="">免责声明</a>
+				<a href="">联系我们</a>
+				<a href=""招贤纳士></a>
+				<a href="">商务合作</a>
+				<a href="">网站地图</a>
+				<a href="">友情链接</a>
+				<a href="">美食杰移动APP</a>
+				</h5>
+				<h6>京ICP备14030359号/京公网安备11010802026928Copyright&copy;2003-2018MEISHIJ CO.,LTD.</h6>
+			</div>
+		</div>
+		<!-- <script>
+			/* js 语句 $(function(){});*/       
+			 $(function(){           
+				 $(".test li").hover(                  
+				   /*找父亲（li）下面的ul*/                    
+				   function() {                       
+					   $(this).find("ul").show(200);                    
+					   },function(){                       
+						   $(this).find("ul").hide(300);   
+											}            );            
+			 $(".test li").hover(                    
+			   function(){                        
+				   $(this).find("ul").fadeIn(300);                   
+					},function(){                       
+						$(this).find("ul").fadeOut(300);         
+								   }           
+									);       
+									 });
+			
+		</script> -->
+	</body>
+</html>
+
