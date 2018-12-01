@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-        <link rel="stylesheet" href="css/index.css">
-		<script src="js/require.js" data-main="js/main"></script>
+    <link rel="stylesheet" href="css/index.css">
+		<script src = "js/jquery-1.11.1.min.js"></script>
+		<script src = "js/public.js"></script>
+		<script src = "js/index.js"></script>
+		<script src = "js/cookie.js"></script>
 		
 	</head>
 	<body>
@@ -23,176 +26,183 @@
 			</ul>
 			</div>
 		</header>
-		<!-- <div class="menu-container">
-			<div class="menu">
-				<ul>
-					<li><a href="#">首页</a></li>
-					<li><a href="http://sc.chinaz.com">菜谱大全</a>
-						<ul>
-							<li><a href="#">家常菜</a>
-								<ul>
-									<li><a href="#">凉菜</a></li>
-									<li><a href="#">素食</a></li>
-									<li><a href="#">海鲜</a></li>
-									<li><a href="#">湘菜</a></li>
-								</ul>
-							</li>
-							<li><a href="#">中华菜系</a>
-								<ul>
-									<li><a href="#">粤菜</a></li>
-									<li><a href="#">川菜</a></li>
-									<li><a href="#">洛阳水席</a></li>
-									<li><a href="#">信阳菜</a></li>
-								</ul>
-							</li>
-							<li><a href="#">外国菜谱</a>
-								<ul>
-									<li><a href="#">法国菜</a></li>
-									<li><a href="#">韩国料理</a></li>
-									<li><a href="#">意大利餐</a></li>
-								</ul>
-							</li>
-							<li><a href="#">烘培</a>
-								<ul>
-									<li><a href="#">甜品点心</a></li>
-									<li><a href="#">饼干配方</a></li>
-									<li><a href="#">蛋糕</a></li>
-									<li><a href="#">面包</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">饮食健康</a>
-						<ul>
-							<li><a href="#">Today</a></li>
-							<li><a href="#">Calendar</a></li>
-							<li><a href="#">Sport</a></li>
-						</ul>
-					</li>
-					<li><a href="http://sc.chinaz.com">美食菜单</a>
-						<ul>
-							<li><a href="#">School</a>
-								<ul>
-									<li><a href="#">Lidership</a></li>
-									<li><a href="#">History</a></li>
-									<li><a href="#">Locations</a></li>
-									<li><a href="#">Careers</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Study</a>
-								<ul>
-									<li><a href="#">Undergraduate</a></li>
-									<li><a href="#">Masters</a></li>
-									<li><a href="#">International</a></li>
-									<li><a href="#">Online</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Study</a>
-								<ul>
-									<li><a href="#">Undergraduate</a></li>
-									<li><a href="#">Masters</a></li>
-									<li><a href="#">International</a></li>
-									<li><a href="#">Online</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Empty sub</a></li>
-						</ul>
-					</li>
-					<li><a href="">家居馆</a></li>
-					<li><a href="">美食达人</a></li>
-					<li><a href="">菜谱食谱</a></li>
-					<li><a href="">手机app下载</a></li>
-				</ul>
-			</div>
-		</div> -->
+		
 		<div id="nav">
 			<div class="nav-wrap">
 			<ul>
 				<li><a href="">首页</a></li>
-				<li>
+				<li class = "pao">
 					<a href="">菜谱大全</a>
-					<!-- <div class="second">
-						<h2>家常菜谱</h2>
-						  <p>
-							<a href="">家常菜</a>
-							<a href="">凉菜</a>
-							<a href="">素食</a>
-						    <a href="">荤菜</a>
-							<a href="">海鲜</a>
-							<a href="">湘菜</a>
-							<a href="">川菜</a>
-							<a href="">粤菜</a>
-						    <a href="">早餐</a>
-							<a href="">中餐</a>
-							<a href="">晚餐</a>
-							<a href="">洛阳水席</a>
-							<a href="">孕婴辅食</a>
-							<a href="">减脂餐</a>
-							</p>
-						
-						<div class="sec1">
-						<h3>中华菜系</h3>
-						<ul>
-							<li><a href="">川菜</a></li>
-							<li><a href="">粤菜</a></li>
-							<li><a href="">东北菜</a></li>
-							<li><a href="">湘菜</a></li>
-							<li><a href="">信阳菜</a></li>
-							<li><a href="">洛阳水席</a></li>
-							<li><a href="">浙江菜</a></li>
-							<li><a href="">清真菜</a></li>
-						</ul>
-						</div>
-						<div class="sec2">
-						<h4>各地小吃</h4>
-						<ul>
-							<li><a href="">北京小吃</a></li>
-							<li><a href="">西安小吃</a></li>
-							<li><a href="">回民小吃</a></li>
-							<li><a href="">洛阳小吃</a></li>
-						</ul>
-						</div>
-						<div class="sec1">
-						<h3>外国菜谱</h3>
-						<ul>
-							<li><a href="">韩国料理</a></li>
-							<li><a href="">日本料理</a></li>
-							<li><a href="">法国菜</a></li>
-							<li><a href="">意大利餐</a></li>
-						</ul>
-						</div>
-						<div class="sec2">
-						<h4>烘培</h4>
-						<ul>
-							<li><a href="">蛋糕面包</a></li>
-							<li><a href="">甜品点心</a></li>
-							<li><a href="">饼干配方</a></li>
-						</ul>
-						</div>
-						<div class="sec1">
-						<h3>厨房百科</h3>
-						<ul>
-							<li><a href="">摆盘周边</a></li>
-							<li><a href="">烹饪技巧</a></li>
-							<li><a href="">生活妙招</a></li>
-							<li><a href="">美食专题</a></li>
-						</ul>
-						</div>
-						<div class="sec2">
-						<h4>食材百科</h4>
-						<li><a href="">蔬菜</a></li>
-						<li><a href="">水果</a></li>
-						<li><a href="">谷类</a></li>
-					</div>
-					</div> -->
+					
 					</li>
-				<li><a href="">饮食健康</a></li>
+				<li class = "pao"><a href="">饮食健康</a></li>
 				<li><a href="">美食菜单</a></li>
 				<li><a href="">家居馆</a></li>
 				<li><a href="">美食达人</a></li>
 				<li><a href="">菜谱视频</a></li>
 				<li><a href="">手机版下载</a></li>
 			</ul>
+			<div class="tab">
+				
+				<div class="second">
+					<div class="ii">
+						
+					</div>
+					<div class="sec">
+					 <h2>家常菜谱</h2>
+						<p>
+						<a href="">家常菜</a>
+						<a href="">凉菜</a>
+						<a href="">素食</a>
+						<a href="">荤菜</a>
+						<a href="">海鲜</a>
+						<a href="">湘菜</a>
+						<a href="">川菜</a>
+						<a href="">粤菜</a>
+						<a href="">早餐</a>
+						<a href="">中餐</a>
+						<a href="">晚餐</a>
+						<a href="">洛阳水席</a>
+						<a href="">孕婴辅食</a>
+						<a href="">减脂餐</a>
+						</p>
+					</div>
+					<div class="sec1">
+						<div class = "l1">
+							<h2>中华菜系</h2>
+							<p>
+								<a href="">川菜</a>
+								<a href="">粤菜</a>
+								<a href="">东北菜</a>
+								<a href="">湘菜</a>
+								<a href="">鲁菜</a>
+								<a href="">浙菜</a>
+								<a href="">湖北菜</a>
+								<a href="">清真菜</a>
+							</p>
+						</div>
+					<div class="r1">
+						<h2>各地小吃</h2>
+						<p>
+							<a href="">四川小吃</a>
+							<a href="">广东小吃</a>
+							<a href="">北京小吃</a>
+							<a href="">陕西小吃</a>
+						</p>
+					</div>
+					</div>
+					<div class="sec1">
+						<div class="l1">
+							<h2>外国菜谱</h2>
+							<p>
+								<a href="">韩国料理</a>
+								<a href="">日本料理</a>
+								<a href="">法国菜</a>
+								<a href="">意大利餐</a>
+							</p>
+						</div>
+					<div class="r1">
+						<h2>烘培</h2>
+						<p>
+							<a href="">蛋糕面包</a>
+							<a href="">饼干配方</a>
+							<a href="">甜点饮品</a>
+						</p>
+					</div>
+					</div>
+					<div class="sec1">
+						<div class="l1">
+							<h2>厨房百科</h2>
+							<p>
+								<a href="">摆盘围边</a>
+								<a href="">烹饪技巧</a>
+								<a href="">生活妙招</a>
+								<a href="">美食专题</a>
+							</p>
+						</div>
+					<div class="r1">
+						<h2>食材百科</h2>
+						<p>
+							<a href="">蔬菜</a>
+							<a href="">水果</a>
+							<a href="">谷类</a>
+						</p>
+					</div>
+					</div>
+					</div>
+					<div class="second">
+						<div class="io">
+							
+						</div>
+						<div class="sec">
+							<h2>饮食健康</h2>
+							<p>
+								<a href="">饮食小常识</a>
+								<a href="">美容瘦身</a>
+								<a href="">食品安全</a>
+								<a href="">养生妙方</a>
+								<a href="">饮食禁忌</a>
+								<a href="">中医保健</a>
+								<a href="">母婴健康饮食</a>
+								<a href="">饮食新闻</a>
+							</p>
+						</div>
+						<div class="sec">
+							<h2>功能性调理</h2>
+							<p>
+								<a href="">清热去火</a>
+								<a href="">减肥</a>
+								<a href="">祛痰</a>
+								<a href="">乌发</a>
+								<a href="">滋阴补肾</a>
+								<a href="">健脾开胃</a>
+								<a href="">消化不良</a>
+								<a href="">清热解毒</a>
+								<a href="">补阳壮阳</a>
+								<a href="">增肥</a>
+							</p>
+						</div>
+						<div class="sec1">
+							<div class="l1">
+								<h2>人群膳食</h2>
+								<p>
+								<a href="">孕妇</a>
+								<a href="">老人</a>
+								<a href="">产妇</a>
+								<a href="">哺乳期</a>
+								<a href="">青少年</a>
+								<a href="">幼儿</a>
+								<a href="">学龄前儿童</a>
+								</p>
+							</div>
+							<div class="r1">
+								<h2>疾病调理</h2>
+								<p>
+									<a href="">糖尿病</a>
+									<a href="">高血压</a>
+									<a href="">痛风</a>
+									<a href="">胃炎</a>
+									<a href="">痔疮</a>
+									<a href="">更年期</a>
+									<a href="">甲状腺</a>
+								</p>
+							</div>
+						</div>
+						<div class="sec">
+							<h2>脏腑调理</h2>
+							<p>
+								<a href="">感冒</a>
+								<a href="">补肾</a>
+								<a href="">阳痿早泄</a>
+								<a href="">补血</a>
+								<a href="">便秘</a>
+								<a href="">腹泻</a>
+								<a href="">活血化瘀</a>
+							</p>
+						</div>
+			</div>
+		 
+			</div> 
 			</div>
 		</div>
 		<div id="tuijian">
@@ -204,15 +214,142 @@
 			<h3>更多食材</h3>
 			<div id = "slide1" class="box1">
 				<ul>
-					<li><a href="##"><img src="img/g1.jpg" alt="薏米"></a></li>
-					<li><a href="##"><img src="img/g2.jpg" alt="红豆"></a></li>
-					<li><a href="##"><img src="img/g3.jpg" alt="板栗"></a></li>
-					<li><a href="##"><img src="img/g4.jpg" alt="燕麦"></a></li>
-					<li><a href="##"><img src="img/g5.jpg" alt="毛豆"></a></li>
-					<li><a href="##"><img src="img/g6.jpg" alt="玉米"></a></li>
-					<li><a href="##"><img src="img/g7.jpg" alt="鸭子"></a></li>
-					<li><a href="##"><img src="img/g8.jpg" alt="鲍鱼"></a></li>
+					<li><a href="##">水果</a></li>
+					<li><a href="##">蔬菜</a></li>
+					<li><a href="##">五谷</a></li>
+					<li><a href="##">生鲜</a></li>
 				</ul>
+				<div class="ta">
+				<div class="shui">
+					<!-- 1 -->
+					<div class="shui1">
+						<img src="img/g1.jpg" alt="">
+						<span></span>
+						<p>薏米</p>
+					</div>
+					<div class="shui1">
+						<img src="img/g2.jpg" alt="">
+						<span></span>
+						<p>红豆</p>
+					</div>
+					<div class="shui1">
+						<img src="img/g3.jpg" alt="">
+						<span></span>
+						<p>板栗</p>
+					</div>
+					<div class="shui1">
+						<img src="img/g4.jpg" alt="">
+						<span></span>
+						<p>燕麦</p>
+					</div>
+					<div class="shui1">
+						<img src="img/g5.jpg" alt="">
+						<span></span>
+						<p>毛豆</p>
+					</div>
+					<div class="shui1">
+						<img src="img/g6.jpg" alt="">
+						<span></span>
+						<p>玉米</p>
+					</div>
+					<div class="shui1">
+						<img src="img/g7.jpg" alt="">
+						<span></span>
+						<p>鸭子</p>
+					</div>
+					<div class="shui1">
+						<img src="img/g8.jpg" alt="">
+						<span></span>
+						<p>鲍鱼</p>
+					</div>
+					</div>
+					<!-- 2 -->
+					<div class="shui">
+						<div class="shui1">
+							<img src="img/g1.jpg" alt="">
+							<span></span>
+							<p>薏米</p>
+						</div>
+						<div class="shui1">
+							<img src="img/g2.jpg" alt="">
+							<span></span>
+							<p>红豆</p>
+						</div>
+						<div class="shui1">
+							<img src="img/g3.jpg" alt="">
+							<span></span>
+							<p>板栗</p>
+						</div>
+						<div class="shui1">
+							<img src="img/g4.jpg" alt="">
+							<span></span>
+							<p>燕麦</p>
+						</div>
+						<div class="shui1">
+							<img src="img/g5.jpg" alt="">
+							<span></span>
+							<p>毛豆</p>
+						</div>
+						<div class="shui1">
+							<img src="img/g6.jpg" alt="">
+							<span></span>
+							<p>玉米</p>
+						</div>
+						<div class="shui1">
+							<img src="img/g7.jpg" alt="">
+							<span></span>
+							<p>鸭子</p>
+						</div>
+						<div class="shui1">
+							<img src="img/g8.jpg" alt="">
+							<span></span>
+							<p>鲍鱼</p>
+						</div>
+						</div>
+						<!-- 3 -->
+						<div class="shui">
+							<div class="shui1">
+								<img src="img/g1.jpg" alt="">
+								<span></span>
+								<p>薏米</p>
+							</div>
+							<div class="shui1">
+								<img src="img/g2.jpg" alt="">
+								<span></span>
+								<p>红豆</p>
+							</div>
+							<div class="shui1">
+								<img src="img/g3.jpg" alt="">
+								<span></span>
+								<p>板栗</p>
+							</div>
+							<div class="shui1">
+								<img src="img/g4.jpg" alt="">
+								<span></span>
+								<p>燕麦</p>
+							</div>
+							<div class="shui1">
+								<img src="img/g5.jpg" alt="">
+								<span></span>
+								<p>毛豆</p>
+							</div>
+							<div class="shui1">
+								<img src="img/g6.jpg" alt="">
+								<span></span>
+								<p>玉米</p>
+							</div>
+							<div class="shui1">
+								<img src="img/g7.jpg" alt="">
+								<span></span>
+								<p>鸭子</p>
+							</div>
+							<div class="shui1">
+								<img src="img/g8.jpg" alt="">
+								<span></span>
+								<p>鲍鱼</p>
+							</div>
+							</div>
+				</div>
 			</div>
 			</div>
 		</div>
