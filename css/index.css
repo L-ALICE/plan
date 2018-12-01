@@ -19,6 +19,7 @@ img { border: 0; display: block; }
 
 .clear_fix { zoom: 1; }
 .active{width:990px;height:260px;background: #fafafa;display: block;}
+
 /*header*/
 header { background: #d10f12; }
 header .header-wrap { width: 990px; height: 129px; margin: auto; background: #d10f12; position: relative; }
@@ -38,7 +39,7 @@ header .header-wrap ul li a { font-size: 11px; color: #fff; line-height: 20px; t
 #nav .nav-wrap ul li { float: left; }
 #nav .nav-wrap ul li a { font-size: 18px; font-weight: 600; color: #444; height: 76px; line-height: 76px; text-align: center; padding: 0 26px; }
 .second .sec{height:48px;margin-left: 38px;width:820px;float:left;margin-bottom: 10px;}
-.second .sec:nth-child(1){margin-top: 20px;}
+.second .sec:nth-child(1){padding-top: 20px;}
 .second .sec1{width:800px;height:60px;margin-left: 38px;clear: both;}
 
 .second .sec1 .l1{width:400px;height:60px;float:left;}
@@ -76,20 +77,57 @@ header .header-wrap ul li a { font-size: 11px; color: #fff; line-height: 20px; t
 /*fruit*/
 #fruit { background: #fae8c8; }
 #fruit .fruit-wrap { height: 313px; background: #fae8c8; width: 990px; margin: auto; position: relative; }
-/* #fruit .fruit-wrap h2 { font-size: 22px; color: #302222; text-align: center; padding-top: 50px; }
+
+#fruit .fruit-wrap h2 { font-size: 22px; color: #302222; text-align: center; padding-top: 50px; }
 #fruit .fruit-wrap h3 { font-size: 11px; color: #666; position: absolute; top: 54px; right: 0; }
-#fruit .fruit-wrap .box1 { height: 193px; margin: auto; background: yellow; margin-top: 47px; } */
 #fruit .fruit-wrap #slide1{
 	height: 193px; 
 	margin: auto; 
-	background: yellow; 
+	background: #fff; 
 	margin-top: 47px;
 }
-#slide ul{ 
+#slide1 ul{ 
+	windth:990px;
+	height:60px;
+	margin-left: 20px;
+}
+#slide1 ul li{
+	float:left;
+	width:58px;
+	text-align: center;
+	margin-top: 15px;
 	
 }
+#slide1 ul li a{
+	font-size: 12px; 
+	color: #667aa3; 
+	line-height: 30px; 
+	width:58px;
+	text-align: center; 
+}
 
-
+#fruit .ta .shui{
+	width:980px;
+	height:117px;
+	margin-left: 20px;
+    overflow: hidden;
+	display: none; 
+	float:left;
+}
+#fruit .ta .selected{display: block;}
+#fruit .ta .shui1{
+	position: relative;
+	margin-right: 2px;
+	float: left;
+	width:117px;
+	height:117px;
+}
+#fruit .ta .shui img{
+	width:117px;
+	height:117px;
+}
+#fruit .ta .shui1 p{width:117px;height:28px;background:#fff;line-height: 28px;font-size: 12px;position: absolute;left:0;bottom: 0;opacity:.5;text-indent: 30px;}
+#fruit .ta .shui1 span{width:10px;height:10px;background:#999;position: absolute;left:0;bottom: 0;margin:9px;z-index:1;}
 /*caipu*/
 #caipu { background: #fae8c8; }
 #caipu .cai-wrap { height: 787px; width: 990px; margin: auto; position: relative; }

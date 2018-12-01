@@ -27,7 +27,13 @@ window.onload = function(){
 					$odiv.css("display","none");
 				})
 
-				
+		//水果栏导航操作
+				var $fulist = $(".oul li"),
+				    $cons = $(".ta  .shui");
+				    $fulist.mouseenter(function(){
+						$(this).css({"background":"#ff3232","color":"#ffebc0"}).siblings().css({"background":"","color":"#667aa3"});
+				$cons.eq( $(this).index() ).addClass("selected").siblings().removeClass("selected");						
+					})
 			}
 		
 		
