@@ -34,6 +34,20 @@ window.onload = function(){
 						$(this).css({"background":"#ff3232","color":"#ffebc0"}).siblings().css({"background":"","color":"#667aa3"});
 				$cons.eq( $(this).index() ).addClass("selected").siblings().removeClass("selected");						
 					})
+					
+		//新闻栏样式操作
+				$(".box2 p").hover(function(){
+					$(this).css({"height":"70px","fontWeight":"900"}).siblings().css({"height":"45px","fontWeight":"500"});
+					var index = $(this).index()
+					$(this).parents(".box2").find("img").css("display","none")
+					$(this).parents(".box2").find("img").eq(index).css("display","block");
+				},function(){
+					$(this).parents(".box2").find("img").css("display","none")
+					$(this).parents(".box2").find("img").eq(0).css("display","block");
+					$(this).parent().find("p").eq(0).css({"height":"70px","fontWeight":"900"}).siblings().css({"height":"45px","fontWeight":"500"});
+				})
+
+
 			}
 		
 		
