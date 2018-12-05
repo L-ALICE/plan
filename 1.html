@@ -9,6 +9,7 @@
 		<script src = "js/public.js"></script>
 		<script src = "js/cookie.js"></script>
 		<script src = "js/sport6.js"></script>
+		
 	</head>
 	<body>
 		<div id="header"></div>
@@ -27,10 +28,12 @@
 						<a href="##">手机注册</a>
 						<a href="##">邮箱注册</a>
 					</div>
-					<form action="" method="post" id = "form1">
-						<p><input type="text" class = "txt" placeholder="请输入手机号"></p>
+					<form action="php/reg.php" method="post" id = "form1">
+						<p><input type="text" class = "txt" placeholder="请输入手机号" id = "tel" name = "tel"></p>
+						<b id = "s1"></b>
 						<p><input type="text" class = "tvt" placeholder="请输入验证码"><button>免费获取验证码</button></p>
-						<p><input type="text" class = "txt" placeholder="请输入密码"></p>
+						<p><input type="text" class = "txt" placeholder="请输入密码" id = "pwd" name = "pwd"></p>
+						<b id = "s2"></b>
 						<p><input type="checkbox"><label>我已阅读并且同意</label><a href="##">美食杰用户使用协议</a></p>
 						<input type="submit" value="注册" id = "sub"/>
 					</form>
@@ -42,6 +45,42 @@
 		</div>
 		<div id="bottom1"></div>
 		<script type="text/javascript">
+			var oForm = document.querySelector("form");
+					oForm.onsubmit = function(){
+						if(flagPwd && flagTel){
+							return true;
+						}else{
+							return false;
+						}
+					}
+					var flagTel = null;
+						tel.onblur = function(){
+							console.log(this)
+							var reg = /^1[358]\d{9}$/;
+							if( reg.test( this.value ) ){
+								flagTel = true;
+								s1.innerHTML = "验证通过";
+							}else{
+								flagTel = false;
+								s1.innerHTML = "请输入正确的手机号";
+							}
+						}
+					var flagPwd = null;
+// 						$("#pwd").mouseover(function(){
+// 							console.log(1)
+// 						})
+// 						console.log($("#pwd")[0])
+						pwd.onclick = function(){
+							var reg = /^.{5,}$/;
+							if( reg.test( this.value ) ){
+								flagPwd = true;
+								s2.innerHTML = "验证通过";
+							}else{
+								flagPwd = false;
+								s2.innerHTML = "验证不通过";
+							}
+						}
+							
 			$("#header").load("index.html header");
 			$("#nav1").load("index.html #nav",function(){
 				var $oo = $("#nav ul li"),
@@ -73,8 +112,8 @@
 								$odiv.css("display","none");
 							})
 			});
-			$("#bottom").load("index.html #bottom");
-				
+			$("#bottom1").load("index.html #bottom");
+			
 		</script>
 	</body>
 </html>

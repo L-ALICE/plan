@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/more.css">
+		<link rel="stylesheet" href="">
+		<script src = "js/jquery-1.11.1.min.js"></script>
+		<script src = "js/public.js"></script>
+		<script src = "js/cookie.js"></script>
+		<script src = "js/sport6.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="nav1"></div>
+		<div id="main">
+			<ul id = "oul">
+				<li><a href="">首页</a><b><</b></li>
+				<li><a href="">菜谱大全</a><b><</b></li>
+				<li><a href="">午餐</a><b><</b></li>
+				<li><a href="">晚餐</a><b><</b></li>
+				<li><a href="">主食</a></li>
+			</ul>
+			<div class="box1">
+				<img src="img/m1.jpg" alt="" class = "i1">
+				<div class="info1">
+					<h1>酱油饭</h1>
+					<div class="ma"></div>
+					<span class = "s1">
+						<a href="javascript:;"></a>
+						<div class="spare">分享到：</div>
+					</span>
+					<dl>
+						<dt><a href="javascript:;">高血压</a></dt>
+						<dt><a href="javascript:;">抵抗力</a></dt>
+						<dt><a href="javascript:;">助消化</a></dt>
+						<dt><a href="javascript:;">降糖</a></dt>
+						<dt><a href="javascript:;">保护视力</a></dt>
+						<dt><a href="javascript:;">健脾</a></dt>
+						<dt><a href="javascript:;">健脑安神</a></dt>
+					</dl>
+				</div>
+				<div class="info2">
+					<ul class = "oul1">
+						<li class = "w127">
+							<strong>工艺</strong>
+							<a href="">炒</a>
+						</li>
+						<li class = "w270">
+							<strong>难度</strong>
+							<div class="pw">
+								<span class = "s2"></span>
+								<span class = "s3"></span>
+								<a href="">新手尝试</a>
+							</div>
+						</li>
+						<li class = "w270">
+							<strong>难度</strong>
+							<div class="pw">
+								<span class = "s2"></span>
+								<span class = "s3"></span>
+								<a href="">新手尝试</a>
+							</div>
+						</li>
+						<li class = "w127">
+							<strong>工艺</strong>
+							<a href="">炒</a>
+						</li>
+						<li class = "w270">
+							<strong>难度</strong>
+							<div class="pw">
+								<span class = "s2"></span>
+								<span class = "s3"></span>
+								<a href="">新手尝试</a>
+							</div>
+						</li>
+						<li class = "w270">
+							<strong>难度</strong>
+							<div class="pw">
+								<span class = "s2"></span>
+								<span class = "s3"></span>
+								<a href="">新手尝试</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="info3">
+					<div class="user">
+						<a href=""><img src="" alt=""></a>
+						<div class="info">
+							<h4>L-ALICE</h4>
+							<span>菜谱：167  /  关注：3  /  粉丝：5489</span>
+							<strong>
+								"2018-05-21 /"
+								<em id = "iem">
+									53502
+								</em>
+								"人看过"
+							</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom1"></div>
+	</body>
+</html>
+<script type="text/javascript">
+	$("#header").load("index.html header");
+	$("#nav1").load("index.html #nav",function(){
+		var $oo = $("#nav ul li"),
+			$olist = $(".pao"),
+			$odiv = $(".second");
+			$oo.hover(function(){
+						var index = $(this).index()-1;
+						$(this).css( "background" ,"#fafafa" ).siblings().css("background","");
+					},function(){
+						var index = $(this).index();
+						$oo.eq(index).css('background',"");
+					})
+			$olist.hover(function(){
+				console.log(1);
+				$(".tab").css("display","block");
+						var index = $(this).index()-1;
+						var flag = true;
+						//根据下标操作对应的内容
+						$odiv.eq(index).css({"display":"block"})
+										.siblings()
+										.css({"display":"none"})
+					},function(){
+						$odiv.css("display","none");
+						$(".tab").css("display","none");
+					})
+			$odiv.hover(function(){
+						$(this).css("display","block");
+					},function(){
+						$odiv.css("display","none");
+					})
+	});
+	$("#bottom1").load("index.html #bottom");
+</script>
