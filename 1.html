@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/1.css">
+		<script src = "js/jquery-1.11.1.min.js"></script>
+		<script src = "js/public.js"></script>
+		<script src = "js/cookie.js"></script>
+		<script src = "js/sport6.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="nav1"></div>
+		<div id="con">
+			<div class="con-wrap">
+				<h3> <span class = "h3_l"></span>注册美食杰<span class = "h3_r"></span></h3>
+				<div class="tubiao">
+					<a href="##"></a>
+					<a href="##"></a>
+					<a href="##"></a>
+				</div>
+				<div class="nl_or"></div>
+				<div class="box">
+					<div class="b_tab">
+						<a href="##">手机注册</a>
+						<a href="##">邮箱注册</a>
+					</div>
+					<form action="" method="post" id = "form1">
+						<p><input type="text" class = "txt" placeholder="请输入手机号"></p>
+						<p><input type="text" class = "tvt" placeholder="请输入验证码"><button>免费获取验证码</button></p>
+						<p><input type="text" class = "txt" placeholder="请输入密码"></p>
+						<p><input type="checkbox"><label>我已阅读并且同意</label><a href="##">美食杰用户使用协议</a></p>
+						<input type="submit" value="注册" id = "sub"/>
+					</form>
+				</div>
+				<div class="bo">
+					已有账号？马上登陆~
+				</div>
+			</div>
+		</div>
+		<div id="bottom1"></div>
+		<script type="text/javascript">
+			$("#header").load("index.html header");
+			$("#nav1").load("index.html #nav",function(){
+				var $oo = $("#nav ul li"),
+					$olist = $(".pao"),
+					$odiv = $(".second");
+					$oo.hover(function(){
+								var index = $(this).index()-1;
+								$(this).css( "background" ,"#fafafa" ).siblings().css("background","");
+							},function(){
+								var index = $(this).index();
+								$oo.eq(index).css('background',"");
+							})
+					$olist.hover(function(){
+						console.log(1);
+						$(".tab").css("display","block");
+								var index = $(this).index()-1;
+								var flag = true;
+								//根据下标操作对应的内容
+								$odiv.eq(index).css({"display":"block"})
+												.siblings()
+												.css({"display":"none"})
+							},function(){
+								$odiv.css("display","none");
+								$(".tab").css("display","none");
+							})
+					$odiv.hover(function(){
+								$(this).css("display","block");
+							},function(){
+								$odiv.css("display","none");
+							})
+			});
+			$("#bottom").load("index.html #bottom");
+				
+		</script>
+	</body>
+</html>

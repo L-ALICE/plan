@@ -39,7 +39,7 @@ header .header-wrap ul li a { font-size: 11px; color: #fff; line-height: 20px; t
 #nav .nav-wrap ul { width: 960px; }
 #nav .nav-wrap ul li { float: left; }
 #nav .nav-wrap ul li a { font-size: 18px; font-weight: 600; color: #444; height: 76px; line-height: 76px; text-align: center; padding: 0 26px; }
-.second{z-index: 100;}
+.second{display: none;}
 .second .sec{height:48px;margin-left: 38px;width:820px;float:left;margin-bottom: 10px;}
 .second .sec:nth-child(1){padding-top: 20px;}
 .second .sec1{width:800px;height:60px;margin-left: 38px;clear: both;}
@@ -69,14 +69,16 @@ header .header-wrap ul li a { font-size: 11px; color: #fff; line-height: 20px; t
     height:260px;
     position: absolute;
     top:76px;
+	display: none;
     }
 .second a{font-size: 13px; color: #a799b5; margin-right: 14px; }
 
 /*#tuijian*/
 #tuijian { background: #fae8c8;  }
 #tuijian .tui-wrap{height:485px;margin:auto;}
-#tuijian .tui-wrap #tui{height:120px;}
-#tuijian .tui-wrap #tui h2 { text-align: center; font-size: 23px; color: #22222c; line-height: 120px; }
+#tuijian .tui-wrap #tui{height:120px;position: relative;}
+#tuijian .tui-wrap #tui li{margin:auto;position: absolute;left:480px;}
+#tuijian .tui-wrap #tui h2 {  font-size: 23px; color: #22222c; line-height: 120px; text-align: center;}
 #tuijian .tui-wrap #tbi{width:5000px;height:330px;position: absolute;}
 #tuijian .tui-wrap #tbi #bigt{position: relative;height:330px;}
 #tuijian .tui-wrap #tbi #bigt li{float:left;} 
@@ -85,8 +87,8 @@ header .header-wrap ul li a { font-size: 11px; color: #fff; line-height: 20px; t
 #bigt li .bs .op{position: absolute;right: 0;bottom:0;height:78px;width:330px;background:#fff;opacity: .5;}
 #bigt li .bs .op b{font-size: 29px;color: #333;margin-left: 20px;padding-top: 20px;}
 #bigt li .bs .op p{font-size: 13px;color: #666;text-indent: 25px;margin-top: 5px;}
-#bigt #btn_l{position: absolute;background:url(../img/tui.png) no-repeat ;width:173px;height:73px;top:120px;left:220px;z-index: 10;}
-#bigt #btn_r{position: absolute;background:url(../img/tui.png) no-repeat ;width:173px;height:73px;top:120px;left:1200px;z-index: 10;}
+#bigt #btn_l{position: absolute;background:url(../img/tui.png) no-repeat 0 -67px;width:173px;height:67px;top:350px;left:220px;z-index: 10;opacity:0;}
+#bigt #btn_r{position: absolute;background:url(../img/tui.png) no-repeat -173px -67px;width:173px;height:67px;top:350px;left:1200px;z-index: 10;opacity:0;}
 /*fruit*/
 #fruit { background: #fae8c8; }
 #fruit .fruit-wrap { height: 313px; background: #fae8c8; width: 990px; margin: auto; position: relative; }
@@ -182,8 +184,16 @@ header .header-wrap ul li a { font-size: 11px; color: #fff; line-height: 20px; t
 #bottom .bo-wrap .box3 span { font-size: 10px; color: #c3c1bf; float: left; }
 #bottom .bo-wrap .box4 { height: 103px; padding-top: 18px; position: absolute; top: 69px; left: 0; }
 #bottom .bo-wrap .box4 p { font-size: 11px; color: #ececc0; height: 25px; line-height: 25px; }
-#bottom .bo-wrap .box4 b { margin-left: 8px; font-size: 16px; color: #ff3232; }
-#bottom .bo-wrap .right { width: 480px; height: 150px; position: absolute; top: 30px; right: 0; }
+
+#bottom .bo-wrap .right { width: 500px; height: 160px; position: absolute; top: 30px; right: 0; }
+#bottom .bo-wrap .right .b1{width:105px;float: left;margin-right: 20px;}
+#bottom .bo-wrap .right .b1 .iim{width:105px;height:105px;position: relative;}
+#bottom .bo-wrap .right .b1 .iim span{height:26px;width:105px;color: #fff;line-height: 26px;text-align: center;position: absolute;top:79px;left: 0;font-size: 12px;}
+#bottom .bo-wrap .right .b1 p{ margin-top: 10px; font-size: 12px; color: #fff;text-align: center; }
+#bottom .bo-wrap .right .b1:nth-child(1) .iim{background:url(../img/footerlinks.png) no-repeat}
+#bottom .bo-wrap .right .b1:nth-child(2) .iim{background:url(../img/footerlinks.png) no-repeat -105px 0;}
+#bottom .bo-wrap .right .b1:nth-child(3) .iim{background:url(../img/footerlinks.png) no-repeat -210px 0;}
+#bottom .bo-wrap .right .b1:nth-child(4) .iim{background:url(../img/footerlinks.png) no-repeat -315px 0;}
 #bottom .bo-wrap h4 { position: absolute; bottom: 215px; left: 0; font-size: 12px; color: #fff; }
 #bottom .bo-wrap .lianjie { width: 990px; height: 68px; border-bottom: 1px solid #444; border-top: 1px solid #444; margin-top: 75px; position: absolute; bottom: 131px; left: 0; }
 #bottom .bo-wrap .lianjie ul li { width: 99px; float: left; }
